@@ -1,0 +1,64 @@
+<!-- 
+Designer Name: Sam Parathuvayalil Sunny
+Website: Personal Online Portfolio
+File Name: header.ejs
+Description: Header + Template for all views
+  -->
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sam's Portfolio</title>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+          <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   
+        <!-- Optional theme -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">   
+     
+       <!-- Latest   jQuery -->
+      <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  
+      <!-- Latest compiled and minified   JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+      
+  </head>
+  <body class="" style="background-image: url(../images/bgimage.jpg);position: relative; top: 30px">
+
+     <div class="" style="height: 800px;">
+
+      <nav style="position: fixed; width: 100%;top:0px;z-index: 2;opacity: .8" class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	  <div style="width: 100%; font-size: 21px;" class="navbar-header">
+	  <% if(displayName) { %>
+      <ul class="nav navbar-nav" style="width: 100%">
+			<li style="width: 32%;"><a style="color:lightblue;font-size: 29px" href="/">Sam Sunny
+			<% if(displayName) { %>
+			<span style="color:lightblue;font-size: 21px;position: absolute; right: 0px">Hello <%= displayName %></span>
+			<% } %>
+			</a></li>
+			<li role="separator" class="divider"></li>
+			<li style="width: 6%;text-align: center;"><a style="color: lightgreen;" href="/">Home</a></li>
+            <li style="width: 6%;text-align: center;"><a style="color: lightgreen;" href="/about">About</a></li>
+            <li style="width: 7%;text-align: center;"><a style="color: lightgreen;" href="/projects">Projects</a></li>
+            <li style="width: 8%;text-align: center;"><a style="color: lightgreen;" href="/services">Services</a></li>
+            <li style="width: 10%;text-align: center;"><a style="color: lightgreen;" href="/contact">Contact Me</a></li>
+            <li style="width: 7%;text-align: center;"><a style="color: lightgreen;" href="/users">Users</a></li>
+            <li style="width: 15%;text-align: center;"><a style="color: lightgreen;" href="/bcontacts">Business Contacts</a></li>
+            <li style="width: 7%;text-align: center;"><a style="color: lightgreen;" href="/logout">Logout</a></li>
+      </ul>      <% } else { %>
+      <ul class="nav navbar-nav" style="width: 100%">
+			<li style="width: 40%;"><a style="color:lightblue;font-size: 29px" href="/">Sam Sunny</a></li>
+			<li style="width: 10%;text-align: center;"><a style="color: lightgreen;" href="/">Home</a></li>
+            <li style="width: 10%;text-align: center;"><a style="color: lightgreen;" href="/about">About</a></li>
+            <li style="width: 10%;text-align: center;"><a style="color: lightgreen;" href="/projects">Projects</a></li>
+            <li style="width: 10%;text-align: center;"><a style="color: lightgreen;" href="/services">Services</a></li>
+            <li style="width: 10%;text-align: center;"><a style="color: lightgreen;" href="/contact">Contact Me</a></li>
+            <li style="width: 10%;text-align: center;"><a style="color: lightgreen;" href="/login">Login</a></li>
+      </ul>
+	  <% } %>
+	  </div>
+	  </div>
+</nav>

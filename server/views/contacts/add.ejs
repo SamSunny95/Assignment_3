@@ -1,0 +1,29 @@
+<!-- This is view to add the business contacts -->
+
+<% include ../partials/header.ejs %>
+
+<main style="height: 93%;width: 98%;left: 1%;   opacity: .6;position: relative; top: 40px;border-radius: 20px" class="panel panel-heading">
+    <h1>Add a New Business Contact</h1>
+       <div class="col-sm-4">
+        <form method="post">
+            <fieldset class="form-group">
+                <label for="email">Email: *</label>
+                <input name="email" type="email" class="form-control" required autofocus />
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="contactname">Contact Name: *</label>
+                <input name="contactname" type="text" class="form-control" required />
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="phone">Phone No.: *</label>
+                <input name="phone" type="text" class="form-control" required />
+            </fieldset>
+            <fieldset class="form-group text-right">
+                <input type="submit" class="btn btn-success" value="Submit"/>
+            </fieldset>
+        </form>
+    </div>
+
+</main>
+
+<% include ../partials/footer.ejs %>
