@@ -17,13 +17,16 @@ Description: Header + Template for all views
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">   
+        
+        <link rel="stylesheet" href="stylesheets/style.css">
      
        <!-- Latest   jQuery -->
+       
       <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   
       <!-- Latest compiled and minified   JavaScript -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
-      
+            
   </head>
   <body class="" style="background-image: url(../images/bgimage.jpg);position: relative; top: 30px">
 
@@ -34,7 +37,7 @@ Description: Header + Template for all views
 	  <div style="width: 100%; font-size: 21px;" class="navbar-header">
 	  <% if(displayName) { %>
       <ul class="nav navbar-nav" style="width: 100%">
-			<li style="width: 32%;"><a style="color:lightblue;font-size: 29px" href="/">Sam Sunny
+			<li style="width: 30%;"><a style="color:lightblue;font-size: 29px" href="/">Sam Sunny
 			<% if(displayName) { %>
 			<span style="color:lightblue;font-size: 21px;position: absolute; right: 0px">Hello <%= displayName %></span>
 			<% } %>
@@ -42,11 +45,12 @@ Description: Header + Template for all views
 			<li role="separator" class="divider"></li>
 			<li style="width: 6%;text-align: center;"><a style="color: lightgreen;" href="/">Home</a></li>
             <li style="width: 6%;text-align: center;"><a style="color: lightgreen;" href="/about">About</a></li>
-            <li style="width: 7%;text-align: center;"><a style="color: lightgreen;" href="/projects">Projects</a></li>
-            <li style="width: 8%;text-align: center;"><a style="color: lightgreen;" href="/services">Services</a></li>
-            <li style="width: 10%;text-align: center;"><a style="color: lightgreen;" href="/contact">Contact Me</a></li>
+            <li style="width: 6%;text-align: center;"><a style="color: lightgreen;" href="/projects">Projects</a></li>
+            <li style="width: 7%;text-align: center;"><a style="color: lightgreen;" href="/services">Services</a></li>
+            <li style="width: 9%;text-align: center;"><a style="color: lightgreen;" href="/contact">Contact Me</a></li>
             <li style="width: 7%;text-align: center;"><a style="color: lightgreen;" href="/users">Users</a></li>
-            <li style="width: 15%;text-align: center;"><a style="color: lightgreen;" href="/bcontacts">Business Contacts</a></li>
+            <li style="width: 14%;text-align: center;"><a style="color: lightgreen;" href="/bcontacts">Business Contacts</a></li>
+            <li style="width: 8%;text-align: center;"><a href="/todoList" style="color: lightgreen;">Todo List</a></li>
             <li style="width: 7%;text-align: center;"><a style="color: lightgreen;" href="/logout">Logout</a></li>
       </ul>      <% } else { %>
       <ul class="nav navbar-nav" style="width: 100%">

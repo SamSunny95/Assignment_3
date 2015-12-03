@@ -1,3 +1,5 @@
+<!-- main view for todo list -->
+
 <% include partials/header.ejs %>
 
  <div class="panel panel-heading" style="height: 93%;width: 98%;left: 1%;   opacity: .8;position: relative; top: 40px;border-radius: 20px">
@@ -23,7 +25,7 @@
 
                             </div> <!-- btn-group -->
                             <span ng-show="editing[$index]">complete?</span>
-                            <input type="checkbox" ng-model="todo.completed" ng-change="update($index)">
+                            <input type="checkbox" ng-model="todo.completed" ng-change="update($index)" onClick="crossover()">
                             <span class="todos">
                   <a ng-show="!editing[$index]" href="#/{{todo._id}}" class="completed-{{todo.completed}}">{{todo.name}}</a></span>
 
